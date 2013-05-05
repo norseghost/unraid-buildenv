@@ -1,0 +1,16 @@
+    /boot/config/plugins/buildenv/buildenv.cfg                  # plugin configuration file
+    /boot/config/plugins/buildenv/packages.list                 # list of packages to install to chroot
+    /boot/config/plugins/buildenv/setup_chroot.sh               # prepares chroot environment
+
+    /etc/rc.d/rc.buildenv                                       # plugin control script
+
+    /usr/local/bin/go_build.sh/go_build.sh                      # sets up/tears down chroot
+    
+    /usr/local/emhttp/plugins/buildenv/event/unmounting_disks   # script to execute for emhttp event
+
+    /tmp/buildenv-cleanup.sh                                    # removes unneeded files
+    /tmp/buildenv-upgrade.sh                                    # Commands to safely upgrade a previously
+                                                                # installed chroot environment
+
+    /var/log/plugins/buildenv                                   # created upon install success
+    /var/run/buildenv/buildenv.pid                              # run-time pid file
